@@ -70,6 +70,15 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="play-services-3.1.59" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-13.0.0" level="project" />
+    <orderEntry type="library" exported="" name="guava-15.0" level="project" />
+    <orderEntry type="library" exported="" name="ion-1.2.1" level="project" />
+    <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
+    <orderEntry type="library" exported="" name="butterknife-4.0.1" level="project" />
+    <orderEntry type="library" exported="" name="sprinkles-1.2.1" level="project" />
+    <orderEntry type="library" exported="" name="joda-time-2.3" level="project" />
+    <orderEntry type="library" exported="" name="androidasync-1.2.1" level="project" />
   </component>
 </module>
 
