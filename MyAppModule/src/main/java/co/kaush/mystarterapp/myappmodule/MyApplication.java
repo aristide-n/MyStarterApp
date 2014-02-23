@@ -14,7 +14,5 @@ public class MyApplication
     @Override
     public void onCreate() {
         super.onCreate();
-
-
     }
 }

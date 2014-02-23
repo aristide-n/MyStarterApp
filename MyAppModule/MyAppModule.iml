@@ -76,6 +76,7 @@
     <orderEntry type="library" exported="" name="ion-1.2.1" level="project" />
     <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
     <orderEntry type="library" exported="" name="butterknife-4.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="espresso-1.1-bundled" level="project" />
     <orderEntry type="library" exported="" name="sprinkles-1.2.1" level="project" />
     <orderEntry type="library" exported="" name="joda-time-2.3" level="project" />
     <orderEntry type="library" exported="" name="androidasync-1.2.1" level="project" />
