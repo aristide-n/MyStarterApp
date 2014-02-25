@@ -1,1 +1,1 @@
-include ':MyAppModule'
+include ':MyAppModule', ':subProjects:MyAppPojos'
