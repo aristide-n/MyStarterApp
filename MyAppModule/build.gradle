@@ -1,4 +1,4 @@
-evaluationDependsOn(':subProjects:MyAppPojos')
+evaluationDependsOn(':subModules:MyAppPojos')
 
 apply plugin: 'android'
 
@@ -8,7 +8,7 @@ repositories {
 
 dependencies {
 
-    compile project(':subProjects:MyAppPojos')
+    compile project(':subModules:MyAppPojos')
 
     compile 'com.google.android.gms:play-services:3.1.+'
 

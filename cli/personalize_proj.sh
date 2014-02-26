@@ -37,11 +37,11 @@ mv MyAppModule ${NEW_APP_MAIN_MODULE}
 mv ${ORIGINAL_APP_DIRECTORY}.iml ${NEW_APP_DIRECTORY}.iml
 rm -Rf ./${NEW_APP_MAIN_MODULE}/build ./${NEW_APP_MAIN_MODULE}/target
 
-echo "Renaming files and directories within subProjects"
+echo "Renaming files and directories within subModules"
 
-mv subProjects/MyAppPojos subProjects/${NEW_APP_DIRECTORY}Pojos
+mv subModules/MyAppPojos subModules/${NEW_APP_DIRECTORY}Pojos
 
-cd subProjects/${NEW_APP_DIRECTORY}Pojos
+cd subModules/${NEW_APP_DIRECTORY}Pojos
 
 mv MyAppPojos.iml ${NEW_APP_DIRECTORY}Pojos.iml
 mkdir -p src/main/java/$NEW_PACKAGE_PATH
@@ -101,7 +101,7 @@ find . -name "*.gradle" -print | xargs sed -i "" -e "s/MyAppModule/${NEW_APP_MAI
 find . -name "*.gradle" -print | xargs sed -i "" -e "s/MyAppPojos/${NEW_APP_DIRECTORY}Pojos/g"
 
 find ${NEW_APP_MAIN_MODULE}/src -name *.java -print | xargs sed -i "" -e "s/$ORIGINAL_PACKAGE_NAME/$NEW_PACKAGE_NAME/g"
-find subProjects/${NEW_APP_DIRECTORY}Pojos/src -name *.java -print | xargs sed -i "" -e "s/$ORIGINAL_PACKAGE_NAME/$NEW_PACKAGE_NAME/g"
+find subModules/${NEW_APP_DIRECTORY}Pojos/src -name *.java -print | xargs sed -i "" -e "s/$ORIGINAL_PACKAGE_NAME/$NEW_PACKAGE_NAME/g"
 
 sed -i "" -e "s/$ORIGINAL_PACKAGE_NAME/$NEW_PACKAGE_NAME/g" ${NEW_APP_MAIN_MODULE}/src/main/AndroidManifest.xml
 sed -i "" -e "s/$ORIGINAL_APP_DIRECTORY/$NEW_APP_DIRECTORY/g" ${NEW_APP_DIRECTORY}.iml .idea/*.xml .idea/runConfigurations/*.xml
