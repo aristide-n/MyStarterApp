@@ -58,22 +58,22 @@ public class MyBaseAdapter<T>
 
         switch (getItemViewType(position)) {
             case ITEM_VIEW_TYPE_HEADER:
-                return getHeaderRow(convertView);
+                return getHeaderRow(convertView, parent);
             default:
-                return getListRow(convertView);
+                return getListRow(convertView, parent);
         }
     }
 
-    private View getHeaderRow(View convertView) {
+    private View getHeaderRow(View convertView, ViewGroup parent) {
 //        if (convertView == null)
-//            convertView = getInflater().inflate(R.layout.some_item, null);
+//            convertView = getInflater().inflate(R.layout.some_item, parent, false);
 
         return convertView;
     }
 
-    private View getListRow(View convertView) {
+    private View getListRow(View convertView, ViewGroup parent) {
         //        if (convertView == null)
-        //            convertView = getInflater().inflate(R.layout.some_item, null);
+        //            convertView = getInflater().inflate(R.layout.some_item, parent, false);
 
         return convertView;
     }
