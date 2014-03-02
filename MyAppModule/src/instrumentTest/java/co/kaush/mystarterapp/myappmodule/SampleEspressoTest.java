@@ -1,4 +1,4 @@
-package co.kaush.mystarterapp.myappmodule.test;
+package co.kaush.mystarterapp.myappmodule;
 
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.TextView;

@@ -1,4 +1,4 @@
-package co.kaush.mystarterapp.myappmodule.pojos.test;
+package co.kaush.mystarterapp.myappmodule.pojos;
 
 import org.junit.Test;
 
